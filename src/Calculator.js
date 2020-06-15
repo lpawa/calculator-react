@@ -11,7 +11,6 @@ class Calculator extends React.Component {
 
         this.clear = this.clear.bind(this);
         this.del = this.del.bind(this);
-        // this.display = this.del.bind(this);
 
         this.buttons = [
             {value: 'AC', type: "operation",id: 'clear', class:"del" ,onClick: this.clear},
