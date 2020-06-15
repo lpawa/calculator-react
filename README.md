@@ -1,5 +1,8 @@
-# cj-app
-React SPA
+# codeudge-app
+## Calculater
+
+![Simple calculator](./src/ScreenShot.png)
+
 
 IMPORTANT NOTES (In case Backend Service API Integration is required):
 
