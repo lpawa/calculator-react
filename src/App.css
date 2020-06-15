@@ -1,15 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -18,6 +15,81 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.header {
+  background-color: #282c34;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.result {
+  background: none;
+  border: none;
+  box-shadow: none;
+  outline: none;
+
+  padding: 10px;
+  width: 100%;
+  border-bottom: 2px solid #111;
+  color: #333;
+  text-align: right;
+  font-size: 30px;
+  border-radius: 0;
+}
+
+.calculator {
+  font-size: 30px; /* larger fonts */
+  max-width: 400px;
+  margin: 0 auto;
+  border: 2px solid #111;
+  border-radius: 5px;
+}
+
+.buttons {
+  padding: 20px;
+
+  /* the grid stuff! */
+  display: grid;
+
+  /* create 4 columns */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  grid-gap: 15px;
+
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+.btn {
+  border: 1px solid #111; /* black border */
+  padding: 20px;
+  border-radius: 5px; /* rounded corners */
+  font-size: 22px; /* larger fonts */
+  cursor: pointer; /* make it look clickable */
+  opacity: 0.5;
+  background-color: #282c34;
+  color: white;
+  box-shadow: ;
+}
+
+.equal {
+  background-color: green;
+}
+
+.del {
+  background-color: red;
+}
+
+.operation {
+  background-color: blue;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
 
 .App-link {
   color: #61dafb;
